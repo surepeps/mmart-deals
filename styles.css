@@ -1,0 +1,134 @@
+/* Base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background gradient */
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    max-width: 450px;
+    width: 90%;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* Header styling */
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+/* Custom File Upload styling */
+.custom-file-upload {
+    position: relative;
+    text-align: center;
+}
+
+#promotion_images {
+    display: none; /* Hide the default file input */
+}
+
+.upload-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #0056b3;
+}
+
+.file-names {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Input styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Button styling */
+button[type="button"]:not(.upload-btn) {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="button"]:not(.upload-btn):hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+button[type="button"]:not(.upload-btn):active {
+    transform: translateY(1px);
+}
+
+/* Response message styling */
+#responseMessage {
+    margin-top: 15px;
+    font-size: 1em;
+    color: #007bff;
+    font-weight: 500;
+}
